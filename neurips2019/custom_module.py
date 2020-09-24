@@ -8,8 +8,10 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F
 from layers import linear, relu, exponential
-torch.set_default_tensor_type('torch.cuda.FloatTensor')
-nn_device='cuda:0'
+# torch.set_default_tensor_type('torch.cuda.FloatTensor')
+torch.set_default_tensor_type('torch.FloatTensor')
+# nn_device='cuda:0'
+nn_device='cpu'
 torch.device(nn_device)
 
 

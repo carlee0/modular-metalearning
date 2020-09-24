@@ -7,8 +7,10 @@ https://github.com/katerakelly/pytorch-maml/blob/master/src/omniglot_net.py
 from __future__ import print_function
 import torch
 from torch import nn
-torch.set_default_tensor_type('torch.cuda.FloatTensor')
-nn_device='cuda:0'
+# torch.set_default_tensor_type('torch.cuda.FloatTensor')
+torch.set_default_tensor_type('torch.FloatTensor')
+# nn_device='cuda:0'
+nn_device='cpu'
 torch.device(nn_device)
 
 #####################################################################
